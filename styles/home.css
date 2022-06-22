@@ -1,0 +1,79 @@
+
+.home {
+    height: max-content;
+    padding: 2rem;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home__welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.home__welcome__header {
+    text-align: center;
+}
+
+.home__button__field {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.home__button__field.welcome {
+    display: none;
+}
+
+.btn.primary {
+    background-color: var(--primary-dark);
+    color: var(--naturel);
+    border: 2px solid  transparent;
+}
+
+.btn.primary:hover {
+    background-color: var(--primary);
+}
+
+.btn.naturel {
+    background-color: var(--naturel);
+    color: var(--primary-dark);
+    border: 2px solid var(--primary-dark);
+}
+
+.btn.naturel:hover {
+    background-color: var(--secondary);
+}
+
+/* ========== Meadia Screen ========== */
+
+@media screen and (min-width: 768px) {
+    .home {
+        height: calc(100vh -3rem);
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .home__welcome {
+        width: 50%;
+    }
+
+    .home__img{
+        width: 50%;
+    }
+
+    .home__button__field {
+       display: none;
+    }
+
+    .home__button__field.welcome {
+        display: flex;
+    }
+}
+
+.apercu__algo {
+    text-align: center;
+}

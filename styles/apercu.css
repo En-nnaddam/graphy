@@ -1,0 +1,48 @@
+.apercu {
+    background-color: var(--secondary);
+    background-image: url(../assets/apercu.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-around;
+    text-shadow: 0.3rem 0.3rem 0.3rem rgb(255, 255, 255);
+}
+
+
+.apercu__presentation {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.apercu__presentation__btn {
+    box-shadow: 0.3rem 0.3rem 0.3rem rgb(255, 255, 255)
+}
+
+.apercu__algo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.apercu__algo a:hover {
+    text-decoration: underline;
+}
+
+/* ========== Meadia Screen ========== */
+
+@media screen and (min-width: 768px) {
+    .apercu__presentation {
+        width: 50%;
+    }
+
+    .apercu__presentation__btn {
+        width: 50%;
+    }
+
+    .apercu__algo {
+        flex-direction: row;
+    }
+}

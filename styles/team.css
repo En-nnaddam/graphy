@@ -1,0 +1,63 @@
+.equipe__btn {
+    padding:  0.5em 1.5em;
+    border-radius: 0.5rem;
+    background-color: var(--primary-dark);
+    border: transparent;
+    color: var(--naturel);
+    cursor: pointer;
+}
+
+.equipe__btn {
+    padding:  0.5em 1.5em;
+    border-radius: 0.5rem;
+    background-color: var(--primary-dark);
+    border: transparent;
+    color: var(--naturel);
+    cursor: pointer;
+}
+
+.equipe {
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 3rem;
+}
+
+/* Card */
+
+.card {
+    padding: 1rem;
+    border: 2px double var(--primary-dark);
+    position: relative;
+    border-radius: 1rem;
+}
+
+.card__img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: -2.5rem;
+    border: 2px solid;
+}
+
+.card__name {
+    text-align: center;
+}
+
+.card__img.right {
+    right: -1.5rem;
+}
+
+.card__img.left {
+    left: -1.5rem;
+}
+
+/* ========== Meadia Screen ========== */
+
+@media screen and (min-width: 768px) {  
+    .equipe {
+        height: 100vh;
+    }
+}

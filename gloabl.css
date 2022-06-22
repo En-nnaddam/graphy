@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --black: #000000;
+    --primary-dark: #2F4550;
+    --primary: #586F7C;
+    --secondary: #B8DBD9;
+    --naturel: #F4F4F9;
+
+    --logo-font: 'Tapestry', cursive;
+    --main-font: 'Poppins', sans-serif;
+
+    --navigation-height: 3rem;
+    --section-padding-top: var(--navigation-height);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: var(--main-font);
+    background-color: var(--naturel);
+    color: var(--primary-dark);
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+.logo {
+    font-family: var(--logo-font);
+    cursor: pointer;
+    color: var(--primary-dark);
+}
+
+.btn {
+    padding:  0.5em 1.5em;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+}
+
+/* standard */
+
+.bg-naturel {
+    background-color: var(--naturel);
+}
+
+.padding-inline-10 {
+    padding-inline: 10px;
+}

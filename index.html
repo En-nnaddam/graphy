@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphy</title>
+    <link rel="stylesheet" href="./gloabl.css">
+    <link rel="stylesheet" href="./styles/navigation.css">
+    <link rel="stylesheet" href="./styles/section.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/apercu.css">
+    <link rel="stylesheet" href="./styles/plusInfo.css">
+    <link rel="stylesheet" href="./styles/team.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+</head>
+
+<body>
+    <nav class="navigation">
+        <a href="#">
+            <h1 class="logo">Graphy</h1>
+        </a>
+        <div class="navigation__menu">
+            <a class="navigation__menu__item" href="#apercu">Aperçu</a>
+            <a class="navigation__menu__item" href="#">Telecharger</a>
+            <a class="navigation__menu__item" href="#plus-info">Plus infos</a>
+            <a class="navigation__menu__item" href="#equipe">Equipe</a>
+        </div>
+        <svg class="navigation__menu-bars" fill="#2F4550" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+            width="24px" height="24px">
+            <path
+                d="M 2 5 L 2 7 L 22 7 L 22 5 L 2 5 z M 2 11 L 2 13 L 22 13 L 22 11 L 2 11 z M 2 17 L 2 19 L 22 19 L 22 17 L 2 17 z" />
+        </svg>
+    </nav>
+    <!-- Home Section -->
+    <section class="home section" id="home">
+        <div class="home__welcome">
+            <h1 class="home__welcome__header">
+                Bienvenu sur <span class="logo">Graphy</span>
+                le top site web pour les graphes informatiques
+            </h1>
+            <div class="home__button__field welcome">
+                <a href="./text.txt" download>
+                    <button class="btn primary">Telecharger</button>
+                </a>
+                <a href="#plus-info">
+                    <button class="btn naturel">plus d'informations</button>
+                </a>
+            </div>
+        </div>
+        <img class="home__img" src="./assets/homeGraph.svg" alt="une graph">
+        <div class="home__button__field">
+            <a href="./text.txt" download>
+                <button class="btn primary">Telecharger</button>
+            </a>
+            <a href="#plus-info">
+                <button class="btn naturel">plus d'informations</button>
+            </a>
+        </div>
+    </section>
+    <!-- Aperçu Section -->
+    <section class="apercu section" id="apercu">
+        <h1 class="section__header">*** Apercu ***</h1>
+        <p class="apercu__presentation">
+            <span class="logo">Graphy</span> est une application des graphes qui fournit une interface permettant aux
+            utilisateurs de choisir
+            des algorithmes pour résoudre le probléme de l'arbre couvrant a poids minimum dan un graphe connexe,
+            pondéré et non orienté.
+        </p>
+        <button class="apercu__presentation__btn btn primary">Commancer à utiliser Graphy</button>
+        <div class="apercu__algo">
+            <div class="apercu__algo-1">
+                <h2 class="apercu__algo__header">Algorithm kruskal</h2>
+                Est l'algorithme le plus simple à comprendre et à implèmenter.
+                cette algorithme nécessite auparavant le tris des arêtes...
+                <a class="btn" href="https://fr.wikipedia.org/wiki/Algorithme_de_Kruskal" target="_blank">Voir plus</a>
+            </div>
+            <div class="apercu__algo-2">
+                <h2 class="apercu__algo__header">Algorithm Boruvka</h2>
+                Est l'algorithme le plus ancien qui existe pour trouver l'arbre couvrant minimal.
+                cette algorithme utilise la proprieté de l'arête de poid minimum...
+                <a class="btn" href="https://fr.wikipedia.org/wiki/Algorithme_de_Bor%C5%AFvka" target="_blank">Voir
+                    plus</a>
+            </div>
+            <div class="apercu__algo-3">
+                <h2 class="apercu__algo__header">Algorithm Prim</h2>
+                Est l'algorithme qui trouve l'arbre couvrant minimal d'une manière plus centralisée...
+                <a class="btn" href="https://fr.wikipedia.org/wiki/Algorithme_de_Prim" target="_blank">Voir plus</a>
+            </div>
+        </div>
+    </section>
+    <!-- plus d'information -->
+    <section class="section plus-info" id="plus-info">
+        <h1 class="section__header naturel">*** Plus d'informations ***</h1>
+        <ul class="plus-info__list">
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Graphe :</span> Est une ensemble de liens qui relient des éléments
+                entre eux. les liens sont représentés par lignes appelées arêts ou par des arcs.
+                les elements sont représentés par des points qu'on appelle sommets.
+            </li>
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Graphe Connexe :</span> Quant tout sommet peut être relié à tout
+                autre sommet par une arête ou une suite d'arêtes, Le graphe connexe est un graphe en un seul morceau.
+            </li>
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Graphe pondéré :</span> Est un graphe étiqueté dont toutes les
+                étiquettes sont des nombre réels positifs ou nuls, ces nombres sont les poids des liaisons (arêtes ou
+                arcs) entre les sommets.
+            </li>
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Graphe non orienté :</span> Est un graphes dont les arêtes n'ont pas
+                de sens (ni avant, ni arrière).
+            </li>
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Arbre :</span> Est une famille particulière de graphe.
+            </li>
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Arbre courrant :</span> Arbre courrant T d'un graphe G est un graphe
+                partiel, sans cycle.
+            </li>
+            <li class="plus-info__list__item">
+                <span class="plus-info__list__cle">Arbre courrant minimal :</span> Est un arbre dont les poids arêtes le
+                constituant est minimal.
+            </li>
+        </ul>
+
+    </section>
+    <!-- Equipe Section -->
+    <section class="equipe section" id="equipe">
+        <h1 class="section__header">*** Equipe ***</h1>
+        <div class="card">
+            <img class="card__img right" src="./assets/char1.jpg" alt="character">
+            <h2 class="card__name">Malak Larabi</h2>
+            Une full stack web developpeur avec 2 ans des experience et une etudiante des scineces mathématiques et
+            informatiques dans l'université Mohammed V Rabat.
+        </div>
+        <div class="card">
+            <img class="card__img left" src="./assets/char2.jpg" alt="character">
+            <h2 class="card__name">Oussama Bousseta</h2>
+            Un étudiant de l'université Mohammed V Rabat, dans la filière SMI et un full satck developpeur des logiciels
+            utilisant python ou java.
+        </div>
+    </section>
+    <footer class="footer">
+        <span class="logo bg-naturel padding-inline-10">Graphy</span> &copy; CopyRight <span id="year"></span>
+    </footer>
+    <script src="./app.js"></script>
+</body>
+
+</html>

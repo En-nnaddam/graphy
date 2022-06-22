@@ -1,0 +1,36 @@
+.plus-info {
+    background-color: var(--primary-dark);
+    color: var(--naturel);
+}
+
+.plus-info__list {
+    margin-top: 2rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
+
+.plus-info__list__item {
+    list-style: "\2708";
+    padding-left: 0.5rem;
+}
+
+.plus-info__list__item::-moz-list-bullet {
+    font-size: 1.5rem;
+    color: var(--secondary);
+}
+
+.plus-info__list__cle {
+    color: var(--secondary);
+    font-size: 1.3rem;
+}
+
+/* ========== Meadia Screen ========== */
+
+@media screen and (min-width: 768px) {
+    .plus-info__list {
+        text-align: left;
+    }
+}
